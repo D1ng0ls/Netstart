@@ -1,0 +1,32 @@
+header {
+    width: 100%;
+    height: 70px;
+    background-color: var(--color-black);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}
+
+.img-logo {
+    margin-left: 40px;
+}
+
+.img-logo img{
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+}
+
+nav {
+    width: 45%;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--color-white);
+    margin-right: 40px;
+}

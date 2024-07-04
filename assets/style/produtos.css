@@ -1,0 +1,10 @@
+.produtos {
+    width: 80%;
+    margin: 150px auto;
+}
+
+.produtos h2 {
+    color: #000;
+    text-align: center;
+    margin-bottom: 100px;
+}
