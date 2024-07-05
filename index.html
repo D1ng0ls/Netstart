@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets/style/index.css">
     <title>Netstart Informática</title>
 </head>
+
 <body>
     <header>
         <div class="img-logo">
@@ -37,26 +38,248 @@
         </section>
         <section class="produtos" id="produtos">
             <h2>Nossos Produtos</h2>
-            <article>
-                <div class="menu-produtos">
-                    <div class="prod prod1">
-                        <p>SIGE</p>
+            <article class="menu-produtos">
+                <div class="prod prod1 select" id="prod1" onclick="abre(1)">
+                    <p>SIGE</p>
+                </div>
+                <div class="prod prod2" id="prod2" onclick="abre(2)">
+                    <p>PDV</p>
+                </div>
+                <div class="prod prod3" id="prod3" onclick="abre(3)">
+                    <p>ERP</p>
+                </div>
+                <div class="prod prod4" id="prod4" onclick="abre(4)">
+                    <p>MDFE</p>
+                </div>
+            </article>
+            <article class="desc-prod">
+                <div class="desc desc1 apears" id="desc1">
+                    <div class="rdesc">
+                        <div class="list-topicos list1">
+                            <button class="topic topic1 slct" id="topic11" onclick="abretopico(1, 1)">Estoque</button>
+                            <button class="topic topic2" id="topic12" onclick="abretopico(1, 2)">Emissão NF-e</button>
+                            <button class="topic topic3" id="topic13" onclick="abretopico(1, 3)">Financeiro</button>
+                            <button class="topic topic4" id="topic14" onclick="abretopico(1, 4)">Instalação</button>
+                        </div>
+                        <div class="text-desc">
+                            <div class="text-topic txt-tpc1 selecionado" id="txt-tpc1">
+                                <h3>Controle de Estoque</h3>
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                </ul>
+                            </div>
+                            <div class="text-topic txt-tpc2" id="txt-tpc2">
+                                <h3>Emissão de Notas Fiscais</h3>
+                                <ul>
+                                    <li>Integração direta com SEFAZ</li>
+                                    <li>Controle em tempo real.</li>
+                                    <li>Monitoramento centralizado.</li>
+                                    <li>Compliance fiscal.</li>
+                                    <li>Simplicidade operacional.</li>
+                                </ul>
+                            </div>
+                            <div class="text-topic txt-tpc3" id="txt-tpc3">
+                                <h3>Controle Financeiro</h3>
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                </ul>
+                            </div>
+                            <div class="text-topic txt-tpc4" id="txt-tpc4">
+                                <h3>Implementação do Sistema</h3>
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                </ul>
+                            </div>
+                            <button class="btn-cta">Faça um orçamento!</button>
+                        </div>
                     </div>
-                    <div class="prod prod2">
-                        <p>PDV</p>
-                    </div>
-                    <div class="prod prod3">
-                        <p>ERP</p>
-                    </div>
-                    <div class="prod prod4">
-                        <p>MDFE</p>
+                    <div class="img-desc block" id="img1">
+                        <img src="assets/media/sige.png" alt="">
                     </div>
                 </div>
-                <div class="desc-prod desc1">
-                    
+                <div class="desc desc2" id="desc2">
+                    <div class="rdesc">
+                        <div class="list-topicos list2">
+                            <button class="topic topic1 slct" id="topic21" onclick="abretopico(2, 1)">Estoque</button>
+                            <button class="topic topic2" id="topic22" onclick="abretopico(2, 2)">Emissão NF-e</button>
+                            <button class="topic topic3" id="topic23" onclick="abretopico(2, 3)">Financeiro</button>
+                            <button class="topic topic4" id="topic24" onclick="abretopico(2, 4)">Instalação</button>
+                        </div>
+                        <div class="text-desc">
+                            <div class="text-topic txt-tpc1 selecionado" id="txt-tpc1">
+                                <h3>Controle de Estoque</h3>
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                </ul>
+                            </div>
+                            <div class="text-topic txt-tpc2" id="txt-tpc2">
+                                <h3>Emissão de Notas Fiscais</h3>
+                                <ul>
+                                    <li>Integração direta com SEFAZ</li>
+                                    <li>Controle em tempo real.</li>
+                                    <li>Monitoramento centralizado.</li>
+                                    <li>Compliance fiscal.</li>
+                                    <li>Simplicidade operacional.</li>
+                                </ul>
+                            </div>
+                            <div class="text-topic txt-tpc3" id="txt-tpc3">
+                                <h3>Controle Financeiro</h3>
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                </ul>
+                            </div>
+                            <div class="text-topic txt-tpc4" id="txt-tpc4">
+                                <h3>Implementação do Sistema</h3>
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                </ul>
+                            </div>
+                            <button class="btn-cta">Faça um orçamento!</button>
+                        </div>
+                    </div>
+                    <div class="img-desc" id="img2">
+                        <img src="assets/media/sige.png" alt="">
+                    </div>
+                </div>
+                <div class="desc desc3" id="desc3">
+                    <div class="rdesc">
+                        <div class="list-topicos list3">
+                            <button class="topic topic1 slct" id="topic31" onclick="abretopico(3, 1)">Estoque</button>
+                            <button class="topic topic2" id="topic32" onclick="abretopico(3, 2)">Emissão NF-e</button>
+                            <button class="topic topic3" id="topic33" onclick="abretopico(3, 3)">Financeiro</button>
+                            <button class="topic topic4" id="topic34" onclick="abretopico(3, 4)">Instalação</button>
+                        </div>
+                        <div class="text-desc">
+                            <div class="text-topic txt-tpc1 selecionado" id="txt-tpc1">
+                                <h3>Controle de Estoque</h3>
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                </ul>
+                            </div>
+                            <div class="text-topic txt-tpc2" id="txt-tpc2">
+                                <h3>Emissão de Notas Fiscais</h3>
+                                <ul>
+                                    <li>Integração direta com SEFAZ</li>
+                                    <li>Controle em tempo real.</li>
+                                    <li>Monitoramento centralizado.</li>
+                                    <li>Compliance fiscal.</li>
+                                    <li>Simplicidade operacional.</li>
+                                </ul>
+                            </div>
+                            <div class="text-topic txt-tpc3" id="txt-tpc3">
+                                <h3>Controle Financeiro</h3>
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                </ul>
+                            </div>
+                            <div class="text-topic txt-tpc4" id="txt-tpc4">
+                                <h3>Implementação do Sistema</h3>
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                </ul>
+                            </div>
+                            <button class="btn-cta">Faça um orçamento!</button>
+                        </div>
+                    </div>
+                    <div class="img-desc" id="img3">
+                        <img src="assets/media/sige.png" alt="">
+                    </div>
+                </div>
+                <div class="desc desc4" id="desc4">
+                    <div class="rdesc">
+                        <div class="list-topicos list1">
+                            <button class="topic topic1 slct" id="topic41" onclick="abretopico(4, 1)">Estoque</button>
+                            <button class="topic topic2" id="topic42" onclick="abretopico(4, 2)">Emissão NF-e</button>
+                            <button class="topic topic3" id="topic43" onclick="abretopico(4, 3)">Financeiro</button>
+                            <button class="topic topic4" id="topic44" onclick="abretopico(4, 4)">Instalação</button>
+                        </div>
+                        <div class="text-desc">
+                            <div class="text-topic txt-tpc1 selecionado" id="txt-tpc1">
+                                <h3>Controle de Estoque</h3>
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                </ul>
+                            </div>
+                            <div class="text-topic txt-tpc2" id="txt-tpc2">
+                                <h3>Emissão de Notas Fiscais</h3>
+                                <ul>
+                                    <li>Integração direta com SEFAZ</li>
+                                    <li>Controle em tempo real.</li>
+                                    <li>Monitoramento centralizado.</li>
+                                    <li>Compliance fiscal.</li>
+                                    <li>Simplicidade operacional.</li>
+                                </ul>
+                            </div>
+                            <div class="text-topic txt-tpc3" id="txt-tpc3">
+                                <h3>Controle Financeiro</h3>
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                </ul>
+                            </div>
+                            <div class="text-topic txt-tpc4" id="txt-tpc4">
+                                <h3>Implementação do Sistema</h3>
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                </ul>
+                            </div>
+                            <button class="btn-cta">Faça um orçamento!</button>
+                        </div>
+                    </div>
+                    <div class="img-desc" id="img4">
+                        <img src="assets/media/sige.png" alt="">
+                    </div>
                 </div>
             </article>
         </section>
     </main>
+    <script src="assets/script/script.js"></script>
 </body>
 </html>

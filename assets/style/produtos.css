@@ -1,5 +1,5 @@
 .produtos {
-    width: 80%;
+    width: 100%;
     margin: 150px auto;
 }
 
@@ -7,4 +7,140 @@
     color: #000;
     text-align: center;
     margin-bottom: 100px;
+}
+
+.menu-produtos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.prod {
+    padding: 30px 50px;
+    border-radius: 20px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: #fafafa;
+    cursor: pointer;
+}
+
+.select {
+    background-color: #f2f2f2;
+    transition: all 0.2s;
+}
+
+.list-topicos, .text-topic, .text-desc {
+    display: none;
+}
+
+.apears {
+    animation: apears 0.3s;
+}
+
+@keyframes apears {
+    0% {
+        transform: translateY(500px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.desc-prod {
+    width: 100%;
+    padding: 80px 0 120px;
+    background-color: #f2f2f2;
+}
+
+.desc {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.rdesc {
+    margin: 0;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.apears .list-topicos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.topic {
+    cursor: pointer;
+    border: 2px solid transparent;
+    background-color: #0500ff;
+    color: var(--color-white);
+    border-radius: 4px;
+    padding: 7px 10px;
+    transition: all 0.2s;
+    font-weight: 700;
+}
+
+.topic:hover {
+    border-color: #0500ff;
+    background-color: #f2f2f2;
+    color: #0500ff;
+}
+
+.slct {
+    border-color: #0500ff;
+    background-color: #f2f2f2;
+    color: #0500ff;
+}
+
+.selecionado, .apears .text-desc{
+    display: block;
+}
+
+.text-desc {
+    margin-left: 30px;
+}
+
+.text-desc h3 {
+    color: #0500ff;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.text-desc ul>li {
+    list-style-type: disc;
+    list-style-position: inside;
+    margin: 10px 0;
+}
+
+.text-desc button {
+    background-color: #0500ff;
+    margin-top: 20px;
+    position: absolute;
+    font-size: 1rem;
+}
+
+.text-desc button:hover {
+    background-color: transparent;
+    border-color: #0500ff;
+    color: #0500ff;
+}
+
+.img-desc {
+    width: 50%;
+    margin-left: auto;
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+.img-desc img {
+    width: 100%;
+    cursor: pointer;
 }
