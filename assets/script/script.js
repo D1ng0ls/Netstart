@@ -21,11 +21,13 @@ function abre(id) {
     prod.classList.toggle("select");
     desc.classList.toggle("apears");
     img.classList.toggle("block");
+
+    abretopico(id, 1)
 }
 
 function abretopico(idlist, id) {
     const topic = document.getElementById("topic" + idlist + id);
-    const text = document.getElementById("txt-tpc" + id);
+    const text = document.getElementById("txt-tpc" + idlist + id);
 
     const todosOsTopicos = document.querySelectorAll('.topic');
     todosOsTopicos.forEach(item => {

@@ -22,6 +22,23 @@
     border-bottom-right-radius: 0;
     background-color: #fafafa;
     cursor: pointer;
+    font-weight: 700;
+}
+
+.prod1 {
+    color: #0500ff;
+}
+
+.prod2 {
+    color: #0f6800;
+}
+
+.prod3 {
+    color: #e31313;
+}
+
+.prod4 {
+    color: #b000c0;
 }
 
 .select {
@@ -85,16 +102,40 @@
     font-weight: 700;
 }
 
-.topic:hover {
+.slct, .topic:hover {
     border-color: #0500ff;
     background-color: #f2f2f2;
     color: #0500ff;
 }
 
-.slct {
-    border-color: #0500ff;
+.list2 .topic {
+    background-color: #0f6800;
+}
+
+.list2 .slct, .list2 .topic:hover {
+    border-color: #0f6800 !important;
     background-color: #f2f2f2;
-    color: #0500ff;
+    color: #0f6800 !important;
+}
+
+.list3 .topic {
+    background-color: #e31313;
+}
+
+.list3 .slct, .list3 .topic:hover {
+    border-color: #e31313 !important;
+    background-color: #f2f2f2;
+    color: #e31313 !important;
+}
+
+.list4 .topic {
+    background-color: #b000c0;
+}
+
+.list4 .slct, .list4 .topic:hover {
+    border-color: #b000c0 !important;
+    background-color: #f2f2f2;
+    color: #b000c0 !important;
 }
 
 .selecionado, .apears .text-desc{
@@ -111,6 +152,18 @@
     font-weight: 700;
 }
 
+.desc2 .text-desc h3 {
+    color: #0f6800;
+}
+
+.desc3 .text-desc h3 {
+    color: #e31313;
+}
+
+.desc4 .text-desc h3 {
+    color: #b000c0;
+}
+
 .text-desc ul>li {
     list-style-type: disc;
     list-style-position: inside;
@@ -122,6 +175,36 @@
     margin-top: 20px;
     position: absolute;
     font-size: 1rem;
+}
+
+.desc2 .text-desc button {
+    background-color: #0f6800;
+}
+
+.desc2 .text-desc button:hover {
+    border-color: #0f6800 !important;
+    background-color: #f2f2f2;
+    color: #0f6800 !important;
+}
+
+.desc3 .text-desc button {
+    background-color: #e31313;
+}
+
+.desc3 .text-desc button:hover {
+    border-color: #e31313 !important;
+    background-color: #f2f2f2;
+    color: #e31313 !important;
+}
+
+.desc4 .text-desc button {
+    background-color: #b000c0;
+}
+
+.desc4 .text-desc button:hover {
+    border-color: #b000c0 !important;
+    background-color: #f2f2f2;
+    color: #b000c0 !important;
 }
 
 .text-desc button:hover {
