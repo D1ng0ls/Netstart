@@ -5,13 +5,13 @@
 :root {
     /* CORES*/
     /* PALETA DO SITE */
-    --color-black: #2d2d2d;
-    --color-blue: #0500FF;
-    --color-green: #0F6800;
-    --color-red: #E20303;
-    --color-lightorange: #F29422;
-    --color-yellow: #F2A922;
-    --color-white: #FFFAFA;
+    --color-black:#2d2d2d;
+    --color-blue:#4169E1;
+    --color-green:#228B22;
+    --color-red:#FF4040;
+    --color-lightorange:#F29422;
+    --color-yellow:#DAA520;
+    --color-white:#FFFAFA;
     /* CORES DOS TEXTOS */
     --color-h1: #000000;
     --color-h2: #333333;
@@ -35,7 +35,8 @@
 
 html {
     scroll-behavior: smooth;
-    background-color: var(--color-white);
+    background-color: var(--color-black);
+    color: var(--color-white);
 }
 
 h1 {
@@ -77,10 +78,10 @@ a {
 }
 
 .btn-cta {
-    background-color: #5f2bd6;
+    background-color: var(--color-red);
     border: 2px solid transparent;
     border-radius: 6px;
-    color: white;
+    color: var(--color-white);
     padding: 10px 20px;
     font-weight: 700;
     font-size: var(--font-size-h3);
@@ -90,8 +91,8 @@ a {
 
 .btn-cta:hover {
     background-color: transparent;
-    color: #5f2bd6;
-    border-color: #5f2bd6;
+    color: var(--color-red);
+    border-color: var(--color-red);
 }
 
 /* ESSA BOSTA DE PAGINA VAI FICAR EM TODOS OS HTML */

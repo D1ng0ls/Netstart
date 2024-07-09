@@ -9,6 +9,10 @@ header {
     position: fixed;
 }
 
+.fixed {
+    box-shadow: 0px 0px 10px #2b2b2b;
+}
+
 .img-logo {
     margin-left: 40px;
 }

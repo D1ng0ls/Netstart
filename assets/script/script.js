@@ -46,3 +46,17 @@ function abretopico(idlist, id) {
     topic.classList.toggle("slct");
     text.classList.toggle("selecionado");
 }
+
+//scrola e aparece a sombra
+
+window.onscroll = function() {
+    myFunction()
+};
+
+function myFunction() {
+    if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+        document.getElementById("header").className = "fixed";
+    } else {
+        document.getElementById("header").className = "";
+    }
+}

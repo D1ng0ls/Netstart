@@ -15,16 +15,17 @@ main {
 
 .text-home {
     width: 50%;
+    color: var(--color-details);
 }
 
 .text-home h1 {
     letter-spacing: 2px;
     margin-bottom: 20px;
-    color: #5f2bd6;
+    color: var(--color-red);
 }
 
 .text-home h3 {
-    color: #000;
+    color: var(--color-white);
     font-weight: 500;
     margin-bottom: 10px;
 }

@@ -4,7 +4,7 @@
 }
 
 .produtos h2 {
-    color: #000;
+    color: var(--color-white);
     text-align: center;
     margin-bottom: 100px;
 }
@@ -20,29 +20,33 @@
     border-radius: 20px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
-    background-color: #fafafa;
+    background-color: var(--color-h2);
     cursor: pointer;
     font-weight: 700;
 }
 
+.prod:hover {
+    background-color: #282828;
+}
+
 .prod1 {
-    color: #0500ff;
+    color: var(--color-blue);
 }
 
 .prod2 {
-    color: #0f6800;
+    color: var(--color-green);
 }
 
 .prod3 {
-    color: #e31313;
+    color: var(--color-red);
 }
 
 .prod4 {
-    color: #b000c0;
+    color: var(--color-yellow);
 }
 
 .select {
-    background-color: #f2f2f2;
+    background-color: #282828;
     transition: all 0.2s;
 }
 
@@ -57,7 +61,7 @@
 @keyframes apears {
     0% {
         transform: translateY(500px);
-        opacity: 0;
+        opacity: -50;
     }
     100% {
         transform: translateY(0px);
@@ -68,7 +72,7 @@
 .desc-prod {
     width: 100%;
     padding: 80px 0 120px;
-    background-color: #f2f2f2;
+    background-color: #282828;
 }
 
 .desc {
@@ -94,7 +98,7 @@
 .topic {
     cursor: pointer;
     border: 2px solid transparent;
-    background-color: #0500ff;
+    background-color: var(--color-blue);
     color: var(--color-white);
     border-radius: 4px;
     padding: 7px 10px;
@@ -103,19 +107,18 @@
 }
 
 .slct, .topic:hover {
-    border-color: #0500ff;
-    background-color: #f2f2f2;
-    color: #0500ff;
+    border-color: var(--color-blue);
+    background-color: transparent !important;
+    color: var(--color-blue);
 }
 
 .list2 .topic {
-    background-color: #0f6800;
+    background-color: var(--color-green);
 }
 
 .list2 .slct, .list2 .topic:hover {
-    border-color: #0f6800 !important;
-    background-color: #f2f2f2;
-    color: #0f6800 !important;
+    border-color: var(--color-green) !important;
+    color: var(--color-green) !important;
 }
 
 .list3 .topic {
@@ -124,18 +127,16 @@
 
 .list3 .slct, .list3 .topic:hover {
     border-color: #e31313 !important;
-    background-color: #f2f2f2;
     color: #e31313 !important;
 }
 
 .list4 .topic {
-    background-color: #b000c0;
+    background-color: var(--color-yellow);
 }
 
 .list4 .slct, .list4 .topic:hover {
-    border-color: #b000c0 !important;
-    background-color: #f2f2f2;
-    color: #b000c0 !important;
+    border-color: var(--color-yellow) !important;
+    color: var(--color-yellow) !important;
 }
 
 .selecionado, .apears .text-desc{
@@ -144,16 +145,17 @@
 
 .text-desc {
     margin-left: 30px;
+    color: var(--color-details);
 }
 
 .text-desc h3 {
-    color: #0500ff;
+    color: var(--color-blue);
     margin-bottom: 20px;
     font-weight: 700;
 }
 
 .desc2 .text-desc h3 {
-    color: #0f6800;
+    color: var(--color-green);
 }
 
 .desc3 .text-desc h3 {
@@ -161,7 +163,7 @@
 }
 
 .desc4 .text-desc h3 {
-    color: #b000c0;
+    color: var(--color-yellow);
 }
 
 .text-desc ul>li {
@@ -171,20 +173,23 @@
 }
 
 .text-desc button {
-    background-color: #0500ff;
+    background-color: var(--color-blue);;
     margin-top: 20px;
     position: absolute;
     font-size: 1rem;
 }
 
+.text-desc button:hover {
+    background-color: transparent;
+}
+
 .desc2 .text-desc button {
-    background-color: #0f6800;
+    background-color: var(--color-green);
 }
 
 .desc2 .text-desc button:hover {
-    border-color: #0f6800 !important;
-    background-color: #f2f2f2;
-    color: #0f6800 !important;
+    border-color: var(--color-green) !important;
+    color: var(--color-green) !important;
 }
 
 .desc3 .text-desc button {
@@ -193,24 +198,21 @@
 
 .desc3 .text-desc button:hover {
     border-color: #e31313 !important;
-    background-color: #f2f2f2;
     color: #e31313 !important;
 }
 
 .desc4 .text-desc button {
-    background-color: #b000c0;
+    background-color: var(--color-yellow);
 }
 
 .desc4 .text-desc button:hover {
-    border-color: #b000c0 !important;
-    background-color: #f2f2f2;
-    color: #b000c0 !important;
+    border-color: var(--color-yellow) !important;
+    color: var(--color-yellow) !important;
 }
 
 .text-desc button:hover {
-    background-color: transparent;
-    border-color: #0500ff;
-    color: #0500ff;
+    border-color: var(--color-blue);
+    color: var(--color-blue);
 }
 
 .img-desc {
