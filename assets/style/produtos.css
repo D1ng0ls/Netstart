@@ -15,6 +15,7 @@
     justify-content: space-evenly;
 }
 
+/*nome dos produtos*/
 .prod {
     padding: 30px 50px;
     border-radius: 20px;
@@ -95,6 +96,7 @@
     justify-content: space-between;
 }
 
+/*lista de topicos do produto*/
 .topic {
     cursor: pointer;
     border: 2px solid transparent;
@@ -107,8 +109,15 @@
 }
 
 .slct, .topic:hover {
-    border-color: var(--color-blue);
+    border-color: currentColor;
     background-color: transparent !important;
+}
+
+.list1 .topic {
+    background-color: var(--color-blue);
+}
+
+.list1 .slct, .list1 .topic:hover {
     color: var(--color-blue);
 }
 
@@ -117,17 +126,15 @@
 }
 
 .list2 .slct, .list2 .topic:hover {
-    border-color: var(--color-green) !important;
     color: var(--color-green) !important;
 }
 
 .list3 .topic {
-    background-color: #e31313;
+    background-color: var(--color-red);
 }
 
 .list3 .slct, .list3 .topic:hover {
-    border-color: #e31313 !important;
-    color: #e31313 !important;
+    color: var(--color-red) !important;
 }
 
 .list4 .topic {
@@ -135,7 +142,6 @@
 }
 
 .list4 .slct, .list4 .topic:hover {
-    border-color: var(--color-yellow) !important;
     color: var(--color-yellow) !important;
 }
 
@@ -143,15 +149,19 @@
     display: block;
 }
 
+/*descrição de cada produto*/
 .text-desc {
     margin-left: 30px;
     color: var(--color-details);
 }
 
 .text-desc h3 {
-    color: var(--color-blue);
     margin-bottom: 20px;
     font-weight: 700;
+}
+
+.desc1 .text-desc h3 {
+    color: var(--color-blue);
 }
 
 .desc2 .text-desc h3 {
@@ -159,7 +169,7 @@
 }
 
 .desc3 .text-desc h3 {
-    color: #e31313;
+    color: var(--color-red);
 }
 
 .desc4 .text-desc h3 {
@@ -172,6 +182,7 @@
     margin: 10px 0;
 }
 
+/*cta de cada produto*/
 .text-desc button {
     background-color: var(--color-blue);;
     margin-top: 20px;
@@ -180,7 +191,12 @@
 }
 
 .text-desc button:hover {
-    background-color: transparent;
+    background-color: transparent !important;
+    border-color: currentColor !important;
+}
+
+.desc1 .text-desc button {
+    background-color: var(--color-blue);
 }
 
 .desc2 .text-desc button {
@@ -188,17 +204,15 @@
 }
 
 .desc2 .text-desc button:hover {
-    border-color: var(--color-green) !important;
-    color: var(--color-green) !important;
+    color: var(--color-green);
 }
 
 .desc3 .text-desc button {
-    background-color: #e31313;
+    background-color: var(--color-red);
 }
 
 .desc3 .text-desc button:hover {
-    border-color: #e31313 !important;
-    color: #e31313 !important;
+    color: var(--color-red);
 }
 
 .desc4 .text-desc button {
@@ -206,13 +220,7 @@
 }
 
 .desc4 .text-desc button:hover {
-    border-color: var(--color-yellow) !important;
-    color: var(--color-yellow) !important;
-}
-
-.text-desc button:hover {
-    border-color: var(--color-blue);
-    color: var(--color-blue);
+    color: var(--color-yellow);
 }
 
 .img-desc {
