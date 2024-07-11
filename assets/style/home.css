@@ -32,9 +32,11 @@ main {
 
 .text-home ul {
     line-height: 2.2rem;
-    margin-bottom: 20px;
+    margin-bottom: 30px;  
 }
 
-.text-home b {
-    color: var(--color-red);
+.text-home mark{
+    background-color: var(--color-red);
+    color: var(--color-white);
+    padding: 0px 5px;
 }
