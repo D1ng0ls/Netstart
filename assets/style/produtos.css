@@ -118,7 +118,7 @@
 }
 
 .list1 .slct, .list1 .topic:hover {
-    color: var(--color-blue);
+    color: var(--color-blue) !important;
 }
 
 .list2 .topic {
@@ -197,6 +197,10 @@
 
 .desc1 .text-desc button {
     background-color: var(--color-blue);
+}
+
+.desc1 .text-desc button:hover {
+    color: var(--color-blue);
 }
 
 .desc2 .text-desc button {
