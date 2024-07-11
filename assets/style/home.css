@@ -8,7 +8,7 @@ main {
     align-items: center;
     width: 85%;
     margin: auto;
-    background: url('../media/ERP.png') no-repeat;
+    background: url('../media/home.png') no-repeat;
     background-position: right center;
     background-size: contain;
 }
