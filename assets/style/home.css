@@ -27,12 +27,14 @@ main {
 .text-home h3 {
     color: var(--color-white);
     font-weight: 500;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .text-home ul {
-    list-style-type: disc;
-    list-style-position: inside;
-    line-height: 2rem;
+    line-height: 2.2rem;
     margin-bottom: 20px;
+}
+
+.text-home b {
+    color: var(--color-red);
 }

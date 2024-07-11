@@ -24,31 +24,32 @@
     background-color: var(--color-h2);
     cursor: pointer;
     font-weight: 700;
+    color: var(--color-smalltext);
+    transition: all 0.3s;
 }
 
 .prod:hover {
     background-color: #282828;
 }
 
-.prod1 {
+.select:nth-child(1) {
     color: var(--color-blue);
 }
 
-.prod2 {
+.select:nth-child(2) {
     color: var(--color-green);
 }
 
-.prod3 {
+.select:nth-child(3) {
     color: var(--color-red);
 }
 
-.prod4 {
+.select:nth-child(4) {
     color: var(--color-yellow);
 }
 
 .select {
     background-color: #282828;
-    transition: all 0.2s;
 }
 
 .list-topicos, .text-topic, .text-desc {
@@ -101,7 +102,7 @@
     cursor: pointer;
     border: 2px solid transparent;
     background-color: var(--color-blue);
-    color: var(--color-white);
+    color: var(--color-details);;
     border-radius: 4px;
     padding: 7px 10px;
     transition: all 0.2s;
