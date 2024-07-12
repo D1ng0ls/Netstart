@@ -54,8 +54,9 @@
 .quest-resposta-mostra {
     height: auto;
     overflow: hidden;
-    transition: all 0.3s;
+    transition: all 0.2s;
     padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 .roda svg {
