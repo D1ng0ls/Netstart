@@ -1,0 +1,51 @@
+.social {
+  width: 100%;
+  margin: 50px auto 150px;
+}
+
+.social h2 {
+  color: var(--color-white);
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.depomentos-social {
+  width: 60%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px 20px;
+}
+
+.depoimento {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+
+.img-dep img {
+  width: 48px;
+  height: 48px;
+  margin-right: 20px;
+  border-radius: 50%;
+  border: 2px solid var(--color-smalltext);
+  padding: 2px;
+  transition: all 0.15s linear;
+}
+
+.text-dep h3 {
+  color: var(--color-white);
+  margin-bottom: 10px;
+  transition: all 0.15s linear;
+}
+
+.depoimento:hover .img-dep img, .depoimento:hover .text-dep h3  {
+  color: var(--color-red);
+  border-color: currentColor;
+}
+
+.text-dep p {
+  color: var(--color-details);
+
+}

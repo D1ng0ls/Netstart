@@ -1,0 +1,10 @@
+.empresas {
+  width: 100%;
+  margin: 50px auto 150px;
+}
+
+.empresas h2 {
+  color: var(--color-white);
+  text-align: center;
+  margin-bottom: 100px;
+}

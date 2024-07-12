@@ -1,0 +1,17 @@
+.suporte {
+  background-color: #282828;
+}
+
+.suporte h2 {
+  color: var(--color-white);
+  text-align: center;
+  padding: 150px 0;
+}
+
+.cards-suporte {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
