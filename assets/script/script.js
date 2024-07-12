@@ -1,4 +1,5 @@
-function abre(id) {
+//abre os produtos
+function abreprod(id) {
     const prod = document.getElementById("prod" + id);
     const desc = document.getElementById("desc" + id);
     const img = document.getElementById("img" + id);
@@ -25,6 +26,7 @@ function abre(id) {
     abretopico(id, 1)
 }
 
+//abre os topicos de cada produto
 function abretopico(idlist, id) {
     const topic = document.getElementById("topic" + idlist + id);
     const text = document.getElementById("txt-tpc" + idlist + id);
@@ -47,8 +49,32 @@ function abretopico(idlist, id) {
     text.classList.toggle("selecionado");
 }
 
-//scrola e aparece a sombra
+//abre as perguntas
+function abrefaq(id) {
+    const resp = document.getElementById("resp" + id);
+    const quest = document.getElementById("quest" + id);
 
+    // Fecha todas as respostas
+    const todasAsRespostas = document.querySelectorAll('.quest-reposta');
+    todasAsRespostas.forEach(item => {
+        if (item.id !== 'resp' + id) {
+            item.classList.remove('quest-resposta-mostra');
+        }
+    });
+
+    const todasAsQuestoes = document.querySelectorAll('.faq-quest');
+    todasAsQuestoes.forEach(item => {
+        if (item.id !== 'quest' + id) {
+            item.classList.remove('roda');
+        }
+    });
+
+    // Abre ou fecha a resposta clicada
+    resp.classList.toggle("quest-resposta-mostra");
+    quest.classList.toggle("roda");
+}
+
+//scrola e aparece a sombra
 window.onscroll = function() {
     myFunction()
 };

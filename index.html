@@ -39,16 +39,16 @@
         <section class="produtos" id="produtos">
             <h2>Nossos Produtos</h2>
             <article class="menu-produtos">
-                <div class="prod prod1 select" id="prod1" onclick="abre(1)">
+                <div class="prod prod1 select" id="prod1" onclick="abreprod(1)">
                     <p>SIGE</p>
                 </div>
-                <div class="prod prod2" id="prod2" onclick="abre(2)">
+                <div class="prod prod2" id="prod2" onclick="abreprod(2)">
                     <p>PDV</p>
                 </div>
-                <div class="prod prod3" id="prod3" onclick="abre(3)">
+                <div class="prod prod3" id="prod3" onclick="abreprod(3)">
                     <p>ERP</p>
                 </div>
-                <div class="prod prod4" id="prod4" onclick="abre(4)">
+                <div class="prod prod4" id="prod4" onclick="abreprod(4)">
                     <p>MDFE</p>
                 </div>
             </article>
@@ -321,7 +321,7 @@
             </article>
         </section>
         <section class="empresas">
-            <h2>Empresas que confiam em nós</h2>
+            <h2>Alguns de nossos clientes</h2>
             <article class="empresas-social">
 
             </article>
@@ -329,33 +329,114 @@
         <section class="suporte">
             <h2>Precisando de ajuda?</h2>
             <article class="cards-suporte">
-                <div class="card card1">
-                    <div class="card-img">
-                        <img src="assets/media/manual.svg" alt="">
+                <a href="">
+                    <div class="card card1">
+                        <div class="card-img">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark" viewBox="0 0 16 16">
+                                <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5z"/>
+                            </svg>
+                        </div>
+                        <div class="card-text">
+                            <p>Baixar o Manual</p>
+                        </div>
                     </div>
-                    <div class="card-text">
-                        <p><a href="">Baixar o Manual</a></p>
+                </a>
+                <a href="">
+                    <div class="card card2">
+                        <div class="card-img">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard2-check" viewBox="0 0 16 16">
+                                <path d="M9.5 0a.5.5 0 0 1 .5.5.5.5 0 0 0 .5.5.5.5 0 0 1 .5.5V2a.5.5 0 0 1-.5.5h-5A.5.5 0 0 1 5 2v-.5a.5.5 0 0 1 .5-.5.5.5 0 0 0 .5-.5.5.5 0 0 1 .5-.5z"/>
+                                <path d="M3 2.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 0 0-1h-.5A1.5 1.5 0 0 0 2 2.5v12A1.5 1.5 0 0 0 3.5 16h9a1.5 1.5 0 0 0 1.5-1.5v-12A1.5 1.5 0 0 0 12.5 1H12a.5.5 0 0 0 0 1h.5a.5.5 0 0 1 .5.5v12a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5z"/>
+                                <path d="M10.854 7.854a.5.5 0 0 0-.708-.708L7.5 9.793 6.354 8.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"/>
+                            </svg>
+                        </div>
+                        <div class="card-text">
+                            <p>Últimas Atualizações</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="card card3">
+                        <div class="card-img">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-outbound" viewBox="0 0 16 16">
+                                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877zM11 .5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V1.707l-4.146 4.147a.5.5 0 0 1-.708-.708L14.293 1H11.5a.5.5 0 0 1-.5-.5"/>
+                            </svg>
+                        </div>
+                        <div class="card-text">
+                            <p>Entre em contato</p>
+                        </div>
+                    </div>
+                </a>
+            </article>
+        </section>
+        <section class="FAQ">
+            <h2>Perguntas Frequentes</h2>
+            <article class="c-faq-conteudo">
+                <div class="faq faq1">
+                    <div class="faq-quest" id="quest1" onclick="abrefaq('1')">
+                        <h3>Lorem ipsum dolor sit amet.</h3><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path></svg>
+                    </div>
+                    <div class="quest-reposta" id="resp1">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum accusantium, necessitatibus dignissimos aliquid corrupti ipsam minima iure quas non fugit dolorum itaque cumque illum ullam amet adipisci sint voluptatibus minus!</p>
                     </div>
                 </div>
-                <div class="card card2">
-                    <div class="card-img">
-                        <img src="assets/media/update.svg" alt="">
+                <div class="faq faq2">
+                    <div class="faq-quest" id="quest2" onclick="abrefaq('2')">
+                        <h3>Lorem ipsum dolor sit amet.</h3><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path></svg>
                     </div>
-                    <div class="card-text">
-                        <p><a href="">Últimas Atualizações</a></p>
+                    <div class="quest-reposta" id="resp2">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum accusantium, necessitatibus dignissimos aliquid corrupti ipsam minima iure quas non fugit dolorum itaque cumque illum ullam amet adipisci sint voluptatibus minus!</p>
                     </div>
                 </div>
-                <div class="card card3">
-                    <div class="card-img">
-                        <img src="assets/media/phone.svg" alt="">
+                <div class="faq faq3">
+                    <div class="faq-quest" id="quest3" onclick="abrefaq('3')">
+                        <h3>Lorem ipsum dolor sit amet.</h3><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path></svg>
                     </div>
-                    <div class="card-text">
-                        <p><a href="">Entre em contato</a></p>
+                    <div class="quest-reposta" id="resp3">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum accusantium, necessitatibus dignissimos aliquid corrupti ipsam minima iure quas non fugit dolorum itaque cumque illum ullam amet adipisci sint voluptatibus minus!</p>
+                    </div>
+                </div>
+                <div class="faq faq4">
+                    <div class="faq-quest" id="quest4" onclick="abrefaq('4')">
+                        <h3>Lorem ipsum dolor sit amet.</h3><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path></svg>
+                    </div>
+                    <div class="quest-reposta" id="resp4">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum accusantium, necessitatibus dignissimos aliquid corrupti ipsam minima iure quas non fugit dolorum itaque cumque illum ullam amet adipisci sint voluptatibus minus!</p>
+                    </div>
+                </div>
+                <div class="faq faq5">
+                    <div class="faq-quest" id="quest5" onclick="abrefaq('5')">
+                        <h3>Lorem ipsum dolor sit amet.</h3><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path></svg>
+                    </div>
+                    <div class="quest-reposta" id="resp5">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum accusantium, necessitatibus dignissimos aliquid corrupti ipsam minima iure quas non fugit dolorum itaque cumque illum ullam amet adipisci sint voluptatibus minus!</p>
+                    </div>
+                </div>
+                <div class="faq faq6">
+                    <div class="faq-quest" id="quest6" onclick="abrefaq('6')">
+                        <h3>Lorem ipsum dolor sit amet.</h3><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path></svg>
+                    </div>
+                    <div class="quest-reposta" id="resp6">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum accusantium, necessitatibus dignissimos aliquid corrupti ipsam minima iure quas non fugit dolorum itaque cumque illum ullam amet adipisci sint voluptatibus minus!</p>
                     </div>
                 </div>
             </article>
         </section>
+        <section class="CTA">
+            <h2>Transforme sua gestão <span>agora!</span></h2>
+            <button class="btn-cta">Faça já um orçamento!</button>
+        </section>
     </main>
+    <footer>
+        <div class="logo-texto">
+            <h3>Netstart Informática</h3>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </footer>
     <script src="assets/script/script.js"></script>
 </body>
 </html>
