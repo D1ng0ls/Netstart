@@ -1,5 +1,5 @@
 .empresas {
-  width: 100%;
+  width: 70%;
   margin: 50px auto 150px;
 }
 
@@ -7,4 +7,37 @@
   color: var(--color-white);
   text-align: center;
   margin-bottom: 100px;
+}
+
+.empresas-social {
+  overflow: hidden;
+  width: 100%;
+}
+
+.slider-track {
+  display: flex;
+  animation: scroll 5s linear infinite;
+}
+
+.slider-track:hover {
+  animation-play-state: paused;
+}
+
+.slide {
+  flex: 0 0 auto;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  cursor: pointer;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }

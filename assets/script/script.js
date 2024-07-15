@@ -86,3 +86,14 @@ function myFunction() {
         document.getElementById("header").className = "";
     }
 }
+
+//slider empresas
+document.addEventListener('DOMContentLoaded', () => {
+    const sliderTrack = document.querySelector('.slider-track');
+    const slides = Array.from(sliderTrack.children);
+
+    slides.forEach(slide => {
+        const clone = slide.cloneNode(true);
+        sliderTrack.appendChild(clone);
+    });
+});
