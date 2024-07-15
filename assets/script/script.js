@@ -1,3 +1,12 @@
+//menu hamburger
+function burgermenu() {
+    document.getElementById('header').classList.toggle("abre-menu");
+    document.getElementById('img-header').src = "assets/media/icons/x.svg";
+    if(document.getElementById('header').clientHeight < 100){
+        document.getElementById('img-header').src = "assets/media/icons/list.svg";
+    }
+}
+
 //abre os produtos
 function abreprod(id) {
     const prod = document.getElementById("prod" + id);
@@ -83,7 +92,11 @@ function myFunction() {
     if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
         document.getElementById("header").className = "fixed";
     } else {
-        document.getElementById("header").className = "";
+        document.getElementById("header").className = "x.svg";
+    }
+
+    if(document.getElementById('header').clientHeight < 100){
+        document.getElementById('img-header').src = "assets/media/icons/list.svg";
     }
 }
 

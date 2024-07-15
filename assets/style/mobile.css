@@ -1,14 +1,215 @@
-/* Estilos para iPhones menores (375x667 pixels) */
-@media only screen and (max-width: 375px) {
-    /* Inserir estilos específicos para iPhones 6, 7, 8 aqui */
+@media only screen and (max-width: 1025px) {
+    /* HOME */
+    .home {
+        width: 90%;
+    }
+    .text-home {
+        width: 70%;
+    }
+
+    /* PRODUTOS */
+    .desc {
+        width: 80%;
+    }
+
+    /* DEPOIMENTOS */
+    .depomentos-social {
+        width: 80%;
+    }
+
+    /* EMPRESAS */
+    .empresas {
+        width: 90%;
+    }
+
+    /* FOOTER */
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 50px;
+    }
+
+    .foot {
+        width: auto;
+    }
 }
 
-/* Estilos para iPhones com telas maiores (414x896 pixels) */
-@media only screen and (min-width: 376px) and (max-width: 414px) {
-    /* Inserir estilos específicos para iPhones XR, 11 aqui */
+@media only screen and (max-width: 768px) {
+    /* HEADER */
+    nav {
+        width: 80%;
+    }
+
+    /* DEPOIMENTOS */
+    .depomentos-social {
+        width: 90%;
+    }
+
+    /* SUPORTE */
+    .cards-suporte {
+        width: 90%;
+    }
+
+    /* FAQ */
+    .c-faq-conteudo {
+        width: 80%;
+    }
+
+    /* FOOTER */
+    footer {
+        gap: 0px;
+    }
+
+    .foot {
+        margin: 0 20px;
+        margin-bottom: 50px;
+    }
+
+    .logo-texto, .faq-texto {
+        margin-left: 50px;
+    }
+
+    .atendimento-texto {
+        margin-right: 50px;
+    }
 }
 
-/* Estilos para laptops e monitores de baixa resolução (1366x768 pixels) */
-@media only screen and (min-width: 1025px) and (max-width: 1366px) {
-    /* Inserir estilos específicos para laptops e monitores menores aqui */
+@media only screen and (max-width: 425px) {
+    /* HEADER */
+    nav {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .menu img {
+        margin-right: 40px;
+        width: 48px;
+        height: 48px;
+        cursor: pointer;
+        transition: transform 0.3s;
+    }
+
+    .abre-menu {
+        height: 100vh;
+        width: 100%;
+        box-shadow: 0px 0px 10px #2b2b2b;
+        animation: aparece 0.3s;
+    }
+
+    .abre-menu .img-logo {
+        display: none;
+    }
+
+    .abre-menu nav {
+        display: block;
+        height: 50vh;
+        margin-left: 40px;
+    }
+
+    .abre-menu nav ul {
+        height: 100%;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .abre-menu nav ul>li {
+        font-size: 2rem;
+    }
+
+    .abre-menu img {
+        transform: rotateZ(90deg);
+        transition: all 0.9s;
+    }
+
+    @keyframes aparece {
+        0% {
+            transform: translateX(2000px);
+        }
+        100% {
+            transform: translateX(0px);
+        }
+    }
+
+    /* HOME */
+    .home {
+        background: none;
+        width: 90%;
+    }
+
+    .text-home {
+        width: 100%;
+    }
+
+    /* PRODUTOS */
+    .prod {
+        padding: 20px 0;
+        width: 25%;
+        text-align: center;
+    }
+
+    .desc {
+        flex-direction: column-reverse;
+        width: 90%;
+    }
+
+    .img-desc {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .rdesc {
+        flex-direction: column;
+    }
+
+    .apears .list-topicos {
+        flex-direction: row;
+        margin-bottom: 20px;
+    }
+
+    .topic {
+        width: 22%;
+        padding: 7px 0;
+    }
+
+    /* DEPOIMENTOS */ 
+    .depomentos-social {
+        grid-template-columns: 1fr;
+    }
+
+    /* EMPRESAS */
+    .slide {
+        width: 75%;
+    }
+
+    /* SUPORTE */
+    .cards-suporte {
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+    /* FOOTER */
+    footer {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .logo-texto, .faq-texto {
+        margin-left: 20px;
+    }
+
+    .atendimento-texto {
+        margin-right: 20px;
+    }
+
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+        
+        100% {
+            transform: translateX(-150%);
+        }
+    }
 }

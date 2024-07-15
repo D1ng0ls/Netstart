@@ -35,3 +35,7 @@ nav ul {
     color: var(--color-white);
     margin-right: 40px;
 }
+
+.menu {
+    display: none;
+}

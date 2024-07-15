@@ -9,3 +9,6 @@
 @import url('faq.css');
 @import url('cta.css');
 @import url('footer.css');
+
+/*DISPOSITIVOS MOBILE*/
+@import url('mobile.css');
