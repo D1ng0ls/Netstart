@@ -38,6 +38,7 @@ footer {
 .foot button {
     margin-top: 20px;
     font-size: 1rem;
+    width: 100%;
 }
 
 .atendimento-texto ul>li {
