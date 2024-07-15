@@ -1,0 +1,14 @@
+/* Estilos para iPhones menores (375x667 pixels) */
+@media only screen and (max-width: 375px) {
+    /* Inserir estilos específicos para iPhones 6, 7, 8 aqui */
+}
+
+/* Estilos para iPhones com telas maiores (414x896 pixels) */
+@media only screen and (min-width: 376px) and (max-width: 414px) {
+    /* Inserir estilos específicos para iPhones XR, 11 aqui */
+}
+
+/* Estilos para laptops e monitores de baixa resolução (1366x768 pixels) */
+@media only screen and (min-width: 1025px) and (max-width: 1366px) {
+    /* Inserir estilos específicos para laptops e monitores menores aqui */
+}
