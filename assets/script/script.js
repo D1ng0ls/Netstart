@@ -110,3 +110,8 @@ document.addEventListener('DOMContentLoaded', () => {
         sliderTrack.appendChild(clone);
     });
 });
+
+//link do cta
+function cta() {
+    window.open('https://api.whatsapp.com/send?phone=5518996576706&text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20utilizar%20o%20seu%20sistema.%20Poderia%20me%20auxiliar?', '_blank')
+}

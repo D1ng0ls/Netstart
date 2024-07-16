@@ -1,6 +1,7 @@
 .empresas {
   width: 70%;
-  margin: 50px auto 150px;
+  margin: 0px auto 150px;
+  padding: 150px 0 0;
 }
 
 .empresas h2 {
